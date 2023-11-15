@@ -33,9 +33,8 @@ model = MLPModel(data_shape, target_shape, hidden_layers)
 model.to(device)
 ```
 
-**Model object:**
+**Model architecture:**
 ```
->>> model
 MLPModel(
   (weights): ParameterList(
       (0): Parameter containing: [torch.float32 of size 784x512 (cuda:0)]
@@ -54,6 +53,8 @@ MLPModel(
 Used [FashionMNIST dataset](https://pytorch.org/vision/stable/generated/torchvision.datasets.FashionMNIST.html) for testing the neural network implementation. Sample from the dataset:
 
 <img src="docs/fashion_mnist_samples.jpg" width="400" />
+
+### Results
 
 Loss and accuracy curves:
 
@@ -79,6 +80,8 @@ Generated dataset with 2 feature containing random values using `numpy` and targ
 
 <img src="docs/log_reg_data.jpg" width="400" />
 
+### Results
+
 Model output after training:
 
 <img src="docs/log_reg_result.jpg" width="400" style="margin-right: 10px" /> <img src="docs/log_reg_result_proba.jpg" width="400" />
@@ -96,6 +99,8 @@ Link to notebook: [linear-regression.ipynb](./linear-regression/linear-regressio
 Generated dataset with only 1 feature containing random values using `numpy` and target by using the generated feature with a linear equation:
 
 <img src="docs/lin_reg_data.jpg" width="400" />
+
+### Results
 
 Model output after training:
 
